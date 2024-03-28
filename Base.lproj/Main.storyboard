@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tray_PilotAlphabet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="airplane.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="8Ir-Hw-Xbr">
+                                <rect key="frame" x="9" y="59" width="393" height="759"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a letter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mav-3n-3i5">
+                                <rect key="frame" x="0.0" y="74" width="393" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="bjh-2L-V9A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Izl-gi-PHp">
+                                <rect key="frame" x="148" y="134" width="97" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ewk-G7-nJs"/>
+                                    <constraint firstAttribute="width" constant="97" id="Vj4-FG-KDg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilot's Alphabet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6x-zM-99D">
+                                <rect key="frame" x="112" y="254" width="169" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZsE-fU-IOu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Ir-Hw-Xbr" secondAttribute="trailing" id="0Z9-xE-XUf"/>
+                            <constraint firstItem="8Ir-Hw-Xbr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6fo-MB-8XF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Ir-Hw-Xbr" secondAttribute="bottom" id="Cj8-Yb-qMQ"/>
+                            <constraint firstItem="J6x-zM-99D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dv8-57-Bix"/>
+                            <constraint firstItem="8Ir-Hw-Xbr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E7f-pZ-hxp"/>
+                            <constraint firstItem="Izl-gi-PHp" firstAttribute="top" secondItem="mav-3n-3i5" secondAttribute="bottom" constant="10" id="FEj-b5-iza"/>
+                            <constraint firstItem="Izl-gi-PHp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MA1-M0-ZkQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mav-3n-3i5" secondAttribute="trailing" id="S9C-Pd-pjZ"/>
+                            <constraint firstItem="mav-3n-3i5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TjI-km-Mvc"/>
+                            <constraint firstItem="J6x-zM-99D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UR2-TV-RY6"/>
+                            <constraint firstItem="mav-3n-3i5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="UWd-Jn-62W"/>
+                            <constraint firstItem="Izl-gi-PHp" firstAttribute="top" secondItem="mav-3n-3i5" secondAttribute="bottom" constant="25" id="XWH-lG-Si9"/>
+                            <constraint firstItem="J6x-zM-99D" firstAttribute="top" secondItem="Izl-gi-PHp" secondAttribute="bottom" constant="70" id="weF-1B-Lbl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alphabetOutlet" destination="J6x-zM-99D" id="Dje-Qw-7cZ"/>
+                        <outlet property="inputOutlet" destination="Izl-gi-PHp" id="Pom-Jp-XNA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="airplane.jpeg" width="1000" height="1619"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
